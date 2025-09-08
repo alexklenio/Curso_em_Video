@@ -1,6 +1,5 @@
 soma = 0
-cont = 1
-
+cont = 0
 
 while True:
     numero = int(input("Digite o número 999 para parar: "))
