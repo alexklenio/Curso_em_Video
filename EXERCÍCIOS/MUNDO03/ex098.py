@@ -3,36 +3,40 @@ from time import sleep
 def lin(msg):
     print('-=' * 35)
     print(msg)
+    print()
 
-
-def contador():
-    lin('  \nContagem de 1 até 10 de 1 em 1:  ')
+def contador(i, f, p):
+    lin(f'Contagem de {i} até {f} de {p} em {p}')
     
-    for n in range(1,11):
-        print(n, end=' ', flush=True)
-        sleep(0.5)
+    if p < 0:
+        p *= -1
 
-    print()
-    print()
+    if p == 0:
+        p = 1
 
-    lin('  \nContagem de 10 até 0 de 2 em 2:  ')
+    if i < f:
+        cont = i
+        while cont <= f:
+            print(f'{cont} ', end='', flush=True)
+            cont += p 
+            sleep(0.5)
+        print('FIM!\n')
+
+    else:
+        cont = i
+        while cont >= f:
+            print(f'{cont} ', end='', flush=True)
+            cont -= p
+            sleep(0.5)
+        print('FIM!\n')
+
     
-    for n in range(10, -1, -2):
-        print(n, end=' ', flush=True)
-        sleep(0.5)   
+contador(0, 100, 10)
+contador(10, 0, 2)
 
-    print()
-    print()
+lin('Agora é a sua vez de personalizar a contagem! ')
+ini = int(input('Inpicio: '))
+fim = int(input('Fim:     '))
+pas = int(input('Passo:   '))
 
-    lin('  \nAgora é a sua vez de personalizar a contagem:  ')
-    i = int(input('Início: '))
-    f = int(input('Fim: '))
-    p = int(input('Passo: '))
-
-    lin(f'Contagem de {i} até {f} de {p} em {p}:')
-    for n in range(i, f+1, p):
-        
-        print(n, end=' ', flush=True)
-        sleep(0.5) 
-
-contador()
+contador(ini, fim, pas)
