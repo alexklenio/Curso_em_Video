@@ -1,8 +1,8 @@
 def title(msg):
 
-    print('-' * 30)
+    print('-' * len(msg))
     print(msg)
-    print('-' * 30)
+    print('-' * len(msg))
 
 
 def soma(a, b):
@@ -15,7 +15,7 @@ def sub(a, b):
 
 def div(a, b):
     d = a / b
-    print(d)
+    print(d)    
 
 def mult(a, b):
     m = a * b
@@ -24,7 +24,7 @@ def mult(a, b):
 
 
 
-
+title("SISTEMA DE ALUNOS")
 
 title("TESTANDO TÍTULO")
 
