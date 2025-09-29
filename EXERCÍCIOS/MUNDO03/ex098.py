@@ -5,7 +5,6 @@ def lin(msg):
     print(msg)
 
 
-
 def contador():
     lin('  \nContagem de 1 até 10 de 1 em 1:  ')
     
