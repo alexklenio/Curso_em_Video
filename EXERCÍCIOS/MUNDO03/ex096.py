@@ -1,6 +1,6 @@
 def area ():
     
-    print('\nCOntrole de terrenos')
+    print('\nControle de terrenos')
     print('---------------------\n')
     l = float(input('LARGURA (m): '))
     c = float(input('COMPRIMENTO (m): '))
