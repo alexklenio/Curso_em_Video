@@ -1,4 +1,4 @@
-from moeda import resumo
+from utilidadesCeV import moeda
 
 p = float(input('Digite o preço: R$ '))
-resumo(p, 20, 12)
+moeda.resumo(p, 20, 12)
