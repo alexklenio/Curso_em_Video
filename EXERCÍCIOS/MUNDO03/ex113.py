@@ -8,7 +8,6 @@ def leia_int(msg):
         except (KeyboardInterrupt):
             print('\033[31mO usuário preferiu não digitar esse número.\033[m')
             return 0
-            break
         else:
             return n
         
