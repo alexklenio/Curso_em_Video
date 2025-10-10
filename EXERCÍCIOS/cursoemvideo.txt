@@ -1,1 +1,4 @@
-Alex, Teste, Curso, EM, VIdeo
+Alex Lopes;39
+Kaua Rodrigues;10
+Kaue Lopes;8
+Caio Lopes;14
